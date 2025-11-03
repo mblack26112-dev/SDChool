@@ -6,13 +6,12 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/home/Navbar';
 import Hero from '@/components/home/Hero';
 import Vision from '@/components/home/Visionsection';
-import WhyPDS from '@/components/home/WhyPDS';
+
 import CoursesSection from '@/components/home/CoursesSection';
-import DiplomaStructure from '@/components/home/DiplomaStructure';
-import TechSpecs from '@/components/home/TechSpecs';
-import MarketingTips from '@/components/home/MarketingTips';
+
+
 import Testimonials from '@/components/home/Testimonials';
-import Audience from '@/components/home/Audience';
+
 import Instructor from '@/components/home/Instructor';
 import FAQ from '@/components/home/Faqsection';
 import CTA from '@/components/home/Ctasection';
