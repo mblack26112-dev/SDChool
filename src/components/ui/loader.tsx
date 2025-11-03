@@ -40,11 +40,15 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
         <div className="relative w-28 h-28 sm:w-36 sm:h-36 mb-5 animate-float">
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-rose-500 via-purple-500 to-blue-500 p-[3px] animate-borderGlow">
             <div className="w-full h-full rounded-full bg-black flex items-center justify-center overflow-hidden">
-              <Image
-                src="/loading2.jpg"
-                alt="Profile"
-                className="w-full h-full rounded-full object-cover"
-              />
+            <Image
+  src="/loading2.jpg"
+  alt="Profile"
+  fill
+  className="rounded-full object-cover"
+  sizes="(max-width: 768px) 100vw, 33vw"
+  priority
+/>
+
             </div>
           </div>
         </div>
