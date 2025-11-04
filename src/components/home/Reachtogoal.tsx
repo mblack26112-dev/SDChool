@@ -1,10 +1,10 @@
 /* =======================
-   🎯 Reach the Right Client Section
+   🎯 Reach the Right Client Section (Black-White-Red Identity)
    ======================= */
 
 'use client';
 import React from 'react';
-import { Target ,Check } from 'lucide-react';
+import { Target, Check } from 'lucide-react';
 
 const ReachClientSection = () => {
   const tips = [
@@ -34,27 +34,31 @@ const ReachClientSection = () => {
   return (
     <section
       id="reach-client"
-      className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#1a1a1a] text-gray-300"
+      className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-gray-100"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* العنوان */}
         <div className="text-center mb-10">
-          <Target className="w-10 h-10 text-rose-400 mx-auto mb-3 animate-bounce" />
+          <Target className="w-10 h-10 text-red-600 mx-auto mb-3 animate-bounce" />
           <h2
             dir="rtl"
-            className="text-3xl sm:text-4xl font-extrabold text-white tracking-wide relative inline-block"
+            className="text-3xl sm:text-4xl font-extrabold text-black tracking-wide relative inline-block"
           >
             كيف تصل إلى العميل المناسب
-            <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+            <span className="block mx-auto w-20 h-1 bg-red-600 mt-3 rounded-full"></span>
           </h2>
         </div>
 
         {/* الكارد Scrollable */}
-        <div className="bg-[#1f2937] rounded-xl border border-gray-700 shadow-lg p-6 h-[550px] overflow-y-auto scroll-smooth hover:scroll-auto transition-all">
-          <ul className="space-y-3 text-sm text-gray-300 leading-relaxed">
+        <div className="bg-black rounded-xl border border-gray-700 shadow-lg p-6 h-[550px] overflow-y-auto scroll-smooth hover:shadow-red-600 transition-all">
+          <ul className="space-y-3 text-sm text-gray-200 leading-relaxed">
             {tips.map((tip, idx) => (
-              <li key={idx} className="flex items-start gap-2">
-                <Check className="w-4 h-4 text-rose-400 mt-1 flex-shrink-0" />
+              <li
+                key={idx}
+                className="flex items-start gap-2 hover:text-white transition-colors"
+                dir="rtl"
+              >
+                <Check className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" />
                 {tip}
               </li>
             ))}

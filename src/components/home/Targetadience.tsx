@@ -1,5 +1,5 @@
 /* =======================
-   👩‍⚕️ Target Audience Section
+   👩‍⚕️ Target Audience Section (Red Identity)
    ======================= */
 
 'use client';
@@ -8,16 +8,16 @@ import React from 'react';
 const DiplomaAudience = () => (
   <section
     id="audience"
-    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#111827] text-gray-300"
+    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-black"
   >
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       {/* العنوان */}
       <h2
         dir="rtl"
-        className="relative text-3xl sm:text-4xl font-extrabold text-center mb-10 text-white tracking-wide"
+        className="relative text-3xl sm:text-4xl font-extrabold text-center mb-10 text-black tracking-wide"
       >
         لمن هذه الدبلومة
-        <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+        <span className="block mx-auto w-20 h-1 bg-red-600 mt-3 rounded-full"></span>
       </h2>
 
       {/* الكروت */}
@@ -47,10 +47,10 @@ const DiplomaAudience = () => (
           <div
             key={i}
             dir="rtl"
-            className="bg-[#1f2937] p-6 rounded-lg text-center shadow border border-gray-700 hover:border-rose-500 transition w-full sm:w-[280px]"
+            className="bg-gray-100 p-6 rounded-lg text-center shadow border border-gray-200 hover:border-red-600 transition w-full sm:w-[280px]"
           >
-            <div className="font-semibold text-white text-lg">{item.title}</div>
-            <div className="text-sm text-gray-400 mt-3 leading-relaxed">{item.desc}</div>
+            <div className="font-semibold text-black text-lg">{item.title}</div>
+            <div className="text-sm text-gray-700 mt-3 leading-relaxed">{item.desc}</div>
           </div>
         ))}
       </div>

@@ -6,15 +6,15 @@ import React from 'react';
 
 import Image from 'next/image';
 const Testimonials = () => (
-  <section className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#111827] text-gray-300">
+  <section className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-gray-300">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
       {/* العنوان */}
-      <h2 className="text-3xl font-bold text-white text-center relative">
+      <h2 className="text-3xl font-bold text-black text-center relative">
   آراء طلابنا
-  <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+  <span className="block mx-auto w-20 h-1 bg-gradient-to-r bg-red-600 mt-3 rounded-full"></span>
 </h2>
 
-      <p className="mt-3 text-gray-300 text-base max-w-2xl mx-auto">
+      <p className="mt-3 text-black text-base max-w-2xl mx-auto">
         بعض الآراء الفعلية ستزيد من مصداقيتك — ضع هنا تعليقات العملاء أو لقطات من محادثات التوصية.
       </p>
 

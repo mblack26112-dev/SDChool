@@ -9,7 +9,7 @@ const Instructor = () => (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-wide text-center relative">
   عن المحاضر
-  <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+  <span className="block mx-auto w-20 h-1  bg-red-600 rounded-full"></span>
 </h2>
 
       <p className="mt-3 text-gray-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">

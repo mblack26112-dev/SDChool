@@ -1,5 +1,5 @@
 /* =======================
-   💰 ROI Section
+   💰 ROI Section (Red Identity)
    ======================= */
 
 'use client';
@@ -9,7 +9,7 @@ import { User, UserCheck, Users, Wrench , Check } from 'lucide-react';
 const ROISection = () => {
   const roiItems = [
     {
-      icon: <User className="w-8 h-8 text-rose-400 mx-auto mb-3" />,
+      icon: <User className="w-8 h-8 text-red-600 mx-auto mb-3" />,
       title: 'طالب',
       points: [
         'هتتعلم أدوات موشن وتصميم تقدر تقدمها كـ خدمات بسيطة لأطباء.',
@@ -20,7 +20,7 @@ const ROISection = () => {
       ],
     },
     {
-      icon: <UserCheck className="w-8 h-8 text-rose-400 mx-auto mb-3" />,
+      icon: <UserCheck className="w-8 h-8 text-red-600 mx-auto mb-3" />,
       title: 'طبيب امتياز',
       points: [
         'هتستخدم مهاراتك في بناء محتوى للعيادة مباشرة.',
@@ -29,7 +29,7 @@ const ROISection = () => {
       ],
     },
     {
-      icon: <Users className="w-8 h-8 text-rose-400 mx-auto mb-3" />,
+      icon: <Users className="w-8 h-8 text-red-600 mx-auto mb-3" />,
       title: 'طبيب محاضر',
       points: [
         'تبني عروض علمية جذابة وسريعة التجهيز (بحث، حالة، بوستر).',
@@ -38,7 +38,7 @@ const ROISection = () => {
       ],
     },
     {
-      icon: <Wrench  className="w-8 h-8 text-rose-400 mx-auto mb-3" />,
+      icon: <Wrench  className="w-8 h-8 text-red-600 mx-auto mb-3" />,
       title: 'فني معمل أسنان',
       points: [
         'تعمل كتالوج رقمي موحّد للخدمات، توزعه على العيادات.',
@@ -53,41 +53,39 @@ const ROISection = () => {
   return (
     <section
       id="roi"
-      className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#111827] text-gray-300"
+      className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-black"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* العنوان */}
         <h2
           dir="rtl"
-          className="relative text-3xl sm:text-4xl font-extrabold text-center mb-10 text-white tracking-wide"
+          className="relative text-3xl sm:text-4xl font-extrabold text-center mb-10 text-black tracking-wide"
         >
           كيف تسترجع قيمة الاستثمار في الدبلومة
-          <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+          <span className="block mx-auto w-20 h-1 bg-red-600 mt-3 rounded-full"></span>
         </h2>
 
-        
         {/* الكروت */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-  {roiItems.map((item, i) => (
-    <div
-      key={i}
-      dir="rtl"
-      className="bg-[#1f2937] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-rose-500 transition flex flex-col"
-    >
-      {item.icon}
-      <h3 className="text-white font-semibold text-lg text-center mb-3">{item.title}</h3>
-      <ul className="text-sm text-gray-400 space-y-2 leading-relaxed">
-        {item.points.map((point, j) => (
-          <li key={j} className="flex items-start gap-2">
-            <Check className="w-4 h-4 text-rose-400 mt-1 flex-shrink-0" />
-            {point}
-          </li>
-        ))}
-      </ul>
-    </div>
-  ))}
-</div>
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+          {roiItems.map((item, i) => (
+            <div
+              key={i}
+              dir="rtl"
+              className="bg-gray-100 p-6 rounded-lg shadow-lg border border-gray-200 hover:border-red-600 transition flex flex-col"
+            >
+              {item.icon}
+              <h3 className="text-black font-semibold text-lg text-center mb-3">{item.title}</h3>
+              <ul className="text-sm text-gray-700 space-y-2 leading-relaxed">
+                {item.points.map((point, j) => (
+                  <li key={j} className="flex items-start gap-2">
+                    <Check className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

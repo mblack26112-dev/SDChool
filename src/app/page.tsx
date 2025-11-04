@@ -66,7 +66,7 @@ export default function LandingPageDark() {
   useSlideAnimation();
 
   return (
-    <main className="min-h-screen font-sans bg-[#111827]">
+    <main className="min-h-screen font-sans bg-[#1a1a1a]">
       <Navbar />
       <Hero />
       <AboutPDS/>
@@ -82,7 +82,7 @@ export default function LandingPageDark() {
       <FAQ />
       <CTA />
 
-      <footer className="bg-[#1f2937] border-t border-gray-700 mt-16">
+      <footer className="bg-[#1a1a1a] border-t border-gray-700 mt-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-400">
           <div>© {new Date().getFullYear()} Para Dental School</div>
           <div className="flex items-center gap-5">

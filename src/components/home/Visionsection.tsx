@@ -1,5 +1,5 @@
 /* =======================
-   🌍 Vision & Why PDS Section (Styled)
+   🌍 Vision & Why PDS Section
    ======================= */
 
 'use client';
@@ -8,17 +8,16 @@ import React from 'react';
 const Vision = () => (
   <section
     id="vision"
-    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#111827] text-gray-300"
+    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-black"
   >
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       {/* لماذا دبلومة PDS؟ */}
       <div className="mb-20">
         <h2
-          className="relative text-3xl sm:text-4xl font-extrabold text-center mb-6 
-          bg-gradient-to-r from-rose-500 to-blue-400 bg-clip-text text-transparent tracking-wide"
+          className="relative text-3xl sm:text-4xl font-extrabold text-center mb-6 tracking-wide"
         >
-          لماذا دبلومة <span dir="ltr" className="inline-block text-white">PDS</span>
-          <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-rose-500 to-blue-400 mt-3 rounded-full"></span>
+          لماذا دبلومة <span dir="ltr" className="inline-block text-black">PDS</span>
+          <span className="block mx-auto w-20 h-1 bg-red-600 mt-3 rounded-full"></span>
         </h2>
 
         {[
@@ -42,27 +41,25 @@ const Vision = () => (
           <p
             key={i}
             dir="rtl"
-            className="mt-4 text-gray-300 text-base sm:text-lg max-w-3xl mx-auto text-center leading-relaxed"
+            className="mt-4 text-gray-700 text-base sm:text-lg max-w-3xl mx-auto text-center leading-relaxed"
           >
-            <span className="font-semibold text-white">{item.title}</span> {item.desc}
+            <span className="font-semibold text-black">{item.title}</span> {item.desc}
           </p>
         ))}
       </div>
 
       {/* رؤيتنا في PDS */}
-   <h2
-  dir="rtl"
-  className="relative text-3xl sm:text-4xl font-extrabold text-center mb-6 
-  bg-gradient-to-r from-rose-400 to-blue-500 bg-clip-text text-transparent tracking-wide"
->
-  رؤيتنا في <span dir="ltr" className="inline-block text-white">PDS</span>
-  <span className="block mx-auto w-20 h-1 bg-gradient-to-r from-blue-400 to-rose-500 mt-3 rounded-full"></span>
-</h2>
-
+      <h2
+        dir="rtl"
+        className="relative text-3xl sm:text-4xl font-extrabold text-center mb-6 tracking-wide"
+      >
+        رؤيتنا في <span dir="ltr" className="inline-block text-black">PDS</span>
+        <span className="block mx-auto w-20 h-1 bg-red-600 mt-3 rounded-full"></span>
+      </h2>
 
       <p
         dir="rtl"
-        className="mt-4 text-gray-300 text-base sm:text-lg max-w-3xl mx-auto text-center leading-relaxed"
+        className="mt-4 text-gray-700 text-base sm:text-lg max-w-3xl mx-auto text-center leading-relaxed"
       >
         نؤمن بأن طالب طب الأسنان ليس مضطرًا لانتظار التخرج لبدء العمل. تهدف دبلومتنا إلى تمكين الطلاب
         والأطباء بمهارات عملية تفتح أمامهم فرص عمل حقيقية، وتمنحهم قدرة على بناء علامة شخصية ومشاريع
@@ -77,10 +74,10 @@ const Vision = () => (
         ].map((item, i) => (
           <div
             key={i}
-            className="bg-[#1f2937] p-6 rounded-lg text-center shadow border border-gray-700 hover:border-rose-500 transition"
+            className="bg-gray-100 p-6 rounded-lg text-center shadow border border-gray-200 hover:border-red-600 transition"
           >
-            <div className="font-semibold text-white text-lg">{item.title}</div>
-            <div className="text-sm text-gray-400 mt-2">{item.desc}</div>
+            <div className="font-semibold text-black text-lg">{item.title}</div>
+            <div className="text-sm text-gray-700 mt-2">{item.desc}</div>
           </div>
         ))}
       </div>

@@ -9,7 +9,7 @@ import { Instagram, MessageCircle } from 'lucide-react';
 const CTA = () => (
   <section
     id="enroll"
-    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-rose-600 text-white text-center sm:text-left"
+    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-red-600 text-white text-center sm:text-left"
   >
     <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
       <div>
