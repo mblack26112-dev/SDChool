@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#" className="font-extrabold text-2xl sm:text-3xl tracking-wide">
           <span className="text-red-600">PDS</span>
-          <span className="text-black">CHOOL</span>
+          <span className="text-black">chool</span>
         </a>
 
         {/* Desktop Menu */}

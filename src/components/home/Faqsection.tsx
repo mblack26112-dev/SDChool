@@ -1,20 +1,28 @@
 /* =======================
-   ❓ FAQ Section
+   ❓ FAQ Section (Light Theme)
    ======================= */
 import React from 'react';
+
 const FAQ = () => (
-  <section id="faq" dir='rtl' className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-[#1a1a1a] text-gray-300">
+  <section
+    id="faq"
+    dir="rtl"
+    className="slide-section opacity-0 transform transition-all duration-700 py-16 bg-white text-black"
+  >
     <div className="max-w-4xl mx-auto px-4 sm:px-6">
-      <h3 className="text-2xl font-bold text-white text-center">الأسئلة الشائعة</h3>
+      <h3 className="text-2xl font-bold text-black text-center border-b-4 border-red-500 pb-2 inline-block mx-auto">
+        الأسئلة الشائعة
+      </h3>
+
       <div className="mt-8 space-y-4">
         {[
           { q: 'هل المحتوى مسجل؟', a: 'نعم، مع تحديثات مستمرة ووصول مدى الحياة.' },
           { q: 'هل أحتاج خبرة تصميم؟', a: 'لا، نبدأ من الأساسيات ونتدرج.' },
-          { q: 'هل أحتاج لابتوب حديث؟', a: 'بالنسبه لكورس الموشن ديزاين باللابتوب نعم تحتاج جهاز عالي الامكانيات لان البرامج المطلوبه تحتاج رام عالي ، ولكن مع ذلك بعض طلابنا تمكنوا من تنفيذ تصاميم علي احهزه ضعيفه جدا .' },
+          { q: 'هل أحتاج لابتوب حديث؟', a: 'بالنسبة لكورس الموشن ديزاين باللابتوب نعم، تحتاج جهاز عالي الإمكانيات لأن البرامج المطلوبة تحتاج رام عالي، ولكن بعض طلابنا تمكنوا من تنفيذ تصاميم على أجهزة ضعيفة جدًا.' },
           { q: 'هل هناك شهادة؟', a: 'نعم، شهادة إنهاء لكل متدرب اجتاز المتطلبات.' },
           {
-  q: 'ما هي المواصفات المثالية للابتوب عالي الأداء؟',
-  a: `
+            q: 'ما هي المواصفات المثالية للابتوب عالي الأداء؟',
+            a: `
 🧠 **المعالج (CPU):**
 يفضل: Intel i7 أو i9 (جيل 11 أو أحدث)
 أو: AMD Ryzen 7 / 9  
@@ -37,12 +45,16 @@ const FAQ = () => (
 📌 **ملحوظة:**
 هذه المواصفات مهمة فقط في كورس **الموشن ديزاين باللابتوب**.
 `
-}
-,
+          },
         ].map((f, i) => (
-          <details key={i} className="border border-gray-700 rounded-lg p-4 text-sm bg-[#1f2937] hover:border-rose-500 transition">
-            <summary className="font-medium cursor-pointer text-white">{f.q}</summary>
-            <p className="mt-2 whitespace-pre-line text-gray-300">{f.a}</p>
+          <details
+            key={i}
+            className="border border-red-500 rounded-lg p-4 text-sm bg-gradient-to-br from-red-500 to-red-600 text-white hover:scale-[1.02] transition-transform duration-200"
+          >
+            <summary className="font-semibold cursor-pointer text-black">
+              {f.q}
+            </summary>
+            <p className="mt-2 whitespace-pre-line text-gray-100">{f.a}</p>
           </details>
         ))}
       </div>
@@ -50,5 +62,4 @@ const FAQ = () => (
   </section>
 );
 
-
-export default FAQ
+export default FAQ;
